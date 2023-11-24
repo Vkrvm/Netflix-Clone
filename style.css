@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2?family=Netflix+Sans');
+
+body {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Netflix Sans', 'Helvetica Neue', 'Segoe UI', Roboto, Ubuntu, sans-serif;
+    background-color: #222222;
+    overflow-x: hidden;
+}
+
+
+.content {
+    position: relative;
+    z-index: 2;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+    background: rgb(0 0 0 / 40%);
+    z-index: 1;
+}
+
+.bg {
+    z-index: -100;
+    width: 100%;
+    height: 100%;
+    transform: scale(1.25) translateY(-10%);
+    object-fit: cover;
+}
+
+.header {
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    margin: auto;
+    padding: 24px 48px;
+    z-index: 100;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.header svg {
+    max-width: 30%;
+    height: auto;
+}
+
+.headbtn {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+}
+
+.btn.btn-secondary.dropdown-toggle {
+    height: 32px;
+}
+
+.btn-secondary:active {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #ffffff;
+}
+
+
+.btn-check:checked+.btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check)+.btn:active {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.dropdown-toggle {
+    background-color: rgb(0 0 0 / 40%);
+}
+
+.dropdown {
+    margin-right: 0.5rem;
+    height: 32px;
+    background-color: rgb(0 0 0 / 40%);
+}
+
+.dropdown-toggle:hover {
+    background-color: rgb(0 0 0 / 40%);
+}
+
+.dropdown-toggle:active {
+    background-color: rgb(0 0 0 / 40%);
+}
+
+.btn.btn-danger {
+
+    height: 32px;
+    width: 75px;
+    background-color: #E50914;
+}
+
+
+
+
+
+
+
+
+
+h1 {
+    font-size: 48px;
+    color: #ffffff;
+    margin: 16px 0px;
+}
+
+p {
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: 400;
+    width: auto;
+    margin: 16px 0px;
+}
+
+h3 {
+    font-size: 20px;
+    color: #ffffff;
+    margin: 16px 0px;
+}
+
+.titles {
+    position: absolute;
+    color: #ffffff;
+    z-index: 1000000;
+    text-align: center;
+    margin: 1rem 0;
+
+}
+
+
+
+.get {
+    height: 58px;
+    width: 210px;
+    margin-left: 0.5rem;
+    color: white;
+    background-color: #E50914;
+    box-sizing: border-box;
+    border: none;
+    font-size: x-large;
+    border-radius: 5px;
+    font-weight: bolder;
+    padding: 0%;
+    cursor: pointer;
+}
+
+input[type="email"],
+textarea {
+    width: 370px;
+    height: 58px;
+    border: 0 solid transparent;
+    border-radius: 5px;
+    background-color: rgb(0 0 0 / 40%);
+    color: #ffffff;
+    font-weight: bold;
+    font-size: larger;
+    padding-left: 0.5rem;
+}
+
+input::placeholder {
+    color: #BABBBB;
+    padding: 0.5rem;
+    font-size: medium;
+}
+
+input::-ms-input-placeholder {
+    color: #BABBBB;
+    padding: 0.5rem;
+}
+
+.email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    flex-wrap: wrap;
+}
+
+.try {
+    position: relative;
+    height: auto;
+    background-color: #000000;
+    margin-top: 5px;
+    padding: 72px 0px;
+}
+
+h2 {
+    color: #ffffff;
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.one {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.try:nth-child(3) .one {
+    flex-direction: row-reverse;
+}
+
+.try:nth-child(5) .one {
+    flex-direction: row-reverse;
+}
+
+.text {
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagetry {
+    position: relative;
+    width: auto;
+    height: auto;
+}
+
+
+
+.imagetry img {
+    max-width: 100%;
+    height: auto;
+}
+
+.questions {
+    background-color: #000000;
+    margin-top: 5px;
+
+}
+
+.asked {
+
+    text-align: center;
+    margin: auto;
+}
+
+.btns {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 4rem;
+    width: auto;
+}
+
+
+
+
+
+
+.accordion-button.collapsed,
+.accordion-body {
+    background-color: #2d2d2d;
+    color: #ffffff;
+}
+
+.started {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+
+.accordion-button::after {
+
+    background-image: url(./plus.svg);
+
+
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url(./close.svg);
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #2d2d2d;
+    color: #fff;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+
+
+
+
+.member {
+
+    text-align: center;
+}
+
+.row,
+.contanier {
+    background-color: #000000;
+}
+
+ul {
+    color: #ffffff;
+    list-style: none;
+
+}
+
+li {
+    margin: 1rem;
+}
+
+
+@media only screen and (max-width: 320px),
+(min-width: 321px) and (max-width: 767px),
+(min-width: 768px) and (max-width: 1023px),
+(min-width: 1024px) and (max-width: 1279px) {
+
+
+    .content {
+        height: 80vh;
+    }
+
+    .header {
+        width: 100%;
+        padding: 15px 15px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    button {
+        width: 100%;
+        padding: 1px 1px;
+        margin: 0%;
+    }
+
+    input[type="email"],
+    textarea {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 1px 1px;
+        margin: 0%;
+    }
+
+    .one {
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+    .try:nth-child(3) .one {
+        flex-direction: column;
+    }
+
+    .try:nth-child(5) .one {
+        flex-direction: column;
+    }
+
+    .text {
+        width: 100%;
+
+    }
+
+    .imagetry {
+        width: 100%;
+    }
+
+    .row.p-5 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0%;
+
+    }
+
+    .col-3 {
+        text-align: center;
+        width: auto;
+    }
+
+    ul {
+
+        padding: 0%;
+    }
+}
